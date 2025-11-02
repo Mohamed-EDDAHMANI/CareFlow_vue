@@ -4,6 +4,7 @@
     "useDefineForClassFields": true,
   "module": "nodenext",
   "moduleResolution": "nodenext",
+  "allowImportingTsExtensions": true,
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
@@ -15,6 +16,11 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "~/*": ["src/*"]
+    },
   "types": ["node", "vite/client"]
   },
   "include": [
@@ -22,6 +28,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "vite.config.ts"
+    "vite.config.ts",
+    "types/**/*.d.ts"
   ]
 }
